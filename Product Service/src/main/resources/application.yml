@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: Product Service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/product
+#    url: jdbc:postgresql://ep-tiny-fire-ahiiaa4z-pooler.c-3.us-east-1.aws.neon.tech/product?sslmode=require&channel_binding=require'
+    username: admin
+    password: root
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+
+
+#  h2:
+#    console:
+#      enabled: true
+#    datasource:
+#      url: jdbc:h2:mem:test
+#    jpa:
+#      show-sql: true
+#      hibernate:
+#        ddl-auto: create
+
+server:
+  port: 8081
